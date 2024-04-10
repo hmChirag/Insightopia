@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .card{
+    width: 18rem;
+    margin-top: 45px;
+} */
+
+.card-container{
+    margin-top: 45px;
+
+}
+
+.card{
+    min-height: 400px;
+    overflow: hidden;
+    width: 18rem; margin: 45px;
+}
+
+
+.card:hover{
+    box-shadow: 1px 1px 8px grey;
+}
