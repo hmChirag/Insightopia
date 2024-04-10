@@ -19,7 +19,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item" style="padding: 0 0 0 950px;">
+              <li class="nav-item" >
                 <a class="nav-link active" aria-current="page" href="#">ipl</a>
               </li>
               <li class="nav-item" style="padding: 0 20px;">
@@ -31,8 +31,23 @@
               
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+
+              <!--input field-->
+              <div class="input-container" style="margin-top: 13px; margin-right: 15px;">
+                <input type="text" name="text" class="input" placeholder="News">
+                <span class="icon"> 
+                  <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </span>
+              </div>
+
+
+              <!--search button-->
+              <button class="ui-btn">
+                <span>
+                  Button 
+                </span>
+              </button>
+               
             </form>
           </div>
         </div>
@@ -51,7 +66,24 @@
                 <h3 class="news-Title" id="news-title">Card title</h3> <!-- Corrected closing tag -->
                 <h5 class="news-source" id="news-Source">Card title</h5>
                 <p class="c-text" id="news-desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">View full article</a>
+                <button class="cssbuttons-io-button">
+                  More...
+                  <div class="icon">
+                    <svg
+                      height="24"
+                      width="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+                
             </div>
         </div>    
     </template>

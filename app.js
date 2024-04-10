@@ -34,5 +34,5 @@ function fillDataCard(cardClone,article){
     newsTitle.innerHTML=article.title;
     newsDesc.innerHTML=article.urlToImage;
     const date=new Date(article.publishedAt).toLocaleString("en-US",{timeZone:"Asia/Jakarta"})
-    newsSource.innerHTML=`${article.source.name} . ${date}`
+    newsSource.innerHTML=`${article.source.name} : ${date}`
 }
