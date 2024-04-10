@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Arial', sans-serif; /* Updated font-family */
+    scroll-behavior: smooth;
 }
 
 .input-container {
@@ -226,7 +227,7 @@ body {
     box-shadow: 1px 1px 8px grey; /* Moved box-shadow here to keep it consistent */
     max-width: 395px;
     margin-top: 45px;
-    
+    min-height: 200px;
 }
 
 #cardContainer {
@@ -290,7 +291,7 @@ body {
   .cssbuttons-io-button .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
-    color: #7b52b9;
+    color: #000000;
   }
   
   .cssbuttons-io-button:hover .icon svg {
