@@ -7,26 +7,27 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif; /* Updated font-family */
 }
 
-/* .card{
-    width: 18rem;
-    margin-top: 45px;
-} */
-
-.card-container{
-    margin-top: 45px;
-
-}
-
-.card{
+.card {
+    flex: 0 0 calc(33.33% - 20px); /* Calculate the width of each card for a third of the container */
     min-height: 400px;
     overflow: hidden;
-    width: 18rem; margin: 45px;
+    margin-bottom: 20px; /* Adjusted margin */
+    box-shadow: 1px 1px 8px grey; /* Moved box-shadow here to keep it consistent */
+    max-width: 300px;
+    margin-top: 45px;
 }
 
+#cardContainer {
+    display: flex; /* Ensure the container is a flex container */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* Changed to gap for better compatibility */
+    padding: 15px;
+}
 
-.card:hover{
-    box-shadow: 1px 1px 8px grey;
+.card:hover {
+    box-shadow: 1px 1px 10px grey; /* Adjusted hover effect */
 }
