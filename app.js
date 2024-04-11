@@ -1,7 +1,7 @@
 const API_KEY="38b1a396928b4d2c86d3a844ccf8144c";
 const url="https://newsapi.org/v2/everything?q=";
 
-window.addEventListener('load',() => fetchNews("technology"));
+window.addEventListener('load',() => fetchNews("tesla"));
 
 
 async function fetchNews(query){
@@ -50,11 +50,13 @@ function navItemClick(id){
     curSelectedNav.classList.add('active');
 }
 
-const searchText= document.getElementById("news-input");
-const searchButton= document.getElementById("search-button");
+const searchButton = document.getElementById('search_button');
+const searchText = document.getElementById('news_input');
 
-searchButton.addEventListener("click",()=>{
-    const input= searchText.value;
-    if(!input) return;
-    fetchNews(input);
+searchButton.addEventListener('click', () => {
+  const query = searchText.value; // Grab value right before using it
+  if (!query) return;
+  fetchNews(query); // Call fetchNews with the retrieved query
+  curSelectedNav?.classList.remove("active");
+  curSelectedNav = null;
 });

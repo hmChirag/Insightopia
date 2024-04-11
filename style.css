@@ -92,7 +92,7 @@ body {
     transition: var(--btn-transition);
     overflow: hidden;
     box-shadow: var(--btn-shadow);
-    margin-top: 15px;
+    margin-top: 10px;
   }
   
   .ui-btn span {
