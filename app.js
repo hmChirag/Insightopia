@@ -50,8 +50,8 @@ function navItemClick(id){
     curSelectedNav.classList.add('active');
 }
 
-const searchButton = document.getElementById('search_button');
-const searchText = document.getElementById('news_input');
+const searchButton = document.getElementById('search-button');
+const searchText = document.getElementById('news-input');
 
 searchButton.addEventListener('click', () => {
   const query = searchText.value; // Grab value right before using it
