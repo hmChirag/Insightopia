@@ -8,8 +8,7 @@ Insightopia is a news website that aggregates news articles from various sources
 - **Responsive Design:** Ensures the website looks great on all devices, including desktops, tablets, and smartphones.
 - **Search Functionality:** Allows users to search for specific topics or keywords.
 - **Filtering:** Provides options to filter news articles based on categories, sources, or date.
-- **Save for Later:** Allows users to bookmark articles to read later.
-- **Share:** Enables users to share articles via social media platforms.
+
 
 ## Technologies Used
 
